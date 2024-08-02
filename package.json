@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-vite",
+  "name": "candy-planet",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-vite/",
+    "build": "vite build --base=/candy-planet/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"

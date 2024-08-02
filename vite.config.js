@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/vanilla-vite',
+    base: '/candy-planet',
   };
 });
