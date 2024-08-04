@@ -1,0 +1,100 @@
+.header {
+  position: relative;
+  z-index: 4;
+
+  padding: 24px 0px;
+
+  @include media(desktop) {
+    padding: 26px 0px;
+  }
+}
+
+.header-blur {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-160px);
+  width: 320px;
+  height: 72px;
+  z-index: 3;
+
+  background: $_primary_blue_color;
+  filter: blur(12.5px);
+
+  @include media(desktop) {
+    height: 100px;
+    transform: translateX(-720px);
+    width: 1440px;
+    filter: blur(25px);
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 6;
+}
+
+.header-logo {
+  font-family: 'Leckerli One';
+  @include font(12, 16);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  @include media(desktop) {
+    @include font(16, 22);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+
+    @include media(desktop) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+.menu-toggle {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+
+  svg {
+    fill: $_text_color;
+  }
+}
+
+.menu-close {
+  display: none;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 80px;
+
+  list-style: none;
+  @include font(16, 19);
+}
