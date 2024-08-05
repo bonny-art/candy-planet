@@ -30,12 +30,8 @@ screen types:
   line-height: math.div(math.round($result * 100), 100);
 }
 
-@mixin retina-background-with-opacity($image, $retina-image, $opacity) {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 1 - $opacity),
-      rgba(255, 255, 255, 1 - $opacity)
-    ),
-    url($image);
+@mixin retina-background($image, $retina-image) {
+  background-image: url($image);
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -43,10 +39,6 @@ screen types:
     only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(255, 237, 254, 1 - $opacity),
-        rgba(255, 237, 254, 1 - $opacity)
-      ),
-      url($retina-image);
+    background-image: url($retina-image);
   }
 }

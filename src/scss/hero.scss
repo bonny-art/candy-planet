@@ -21,10 +21,9 @@
 
   padding-top: 60px;
 
-  @include retina-background-with-opacity(
+  @include retina-background(
     '../img/hero/bg-mob@1x.jpg',
-    '../img/hero/bg-mob@2x.jpg',
-    $_opacity
+    '../img/hero/bg-mob@2x.jpg'
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,10 +35,9 @@
     padding-top: 259px;
     padding-bottom: 308px;
 
-    @include retina-background-with-opacity(
+    @include retina-background(
       '../img/hero/bg-desk@1x.jpg',
-      '../img/hero/bg-desk@2x.jpg',
-      $_opacity
+      '../img/hero/bg-desk@2x.jpg'
     );
 
     box-shadow: 0px 0px 40px 0px #c6aecd;
