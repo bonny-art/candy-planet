@@ -1,12 +1,12 @@
 .reviews {
-  padding: 24px 0 30px;
+  padding: 24px 0 0;
 
   display: flex;
   flex-direction: column;
   gap: 20px;
 
   @include media(desktop) {
-    padding: 100px 0 60px;
+    padding: 100px 0 0;
 
     gap: 160px;
   }
