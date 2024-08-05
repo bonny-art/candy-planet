@@ -18,7 +18,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 40px;
+    top: 456px;
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
@@ -48,7 +48,7 @@
 
   height: 100%;
   padding-top: 60px;
-  padding-bottom: 330px;
+  padding-bottom: 383px;
 
   position: relative;
 
@@ -113,7 +113,7 @@
   display: block;
 
   position: absolute;
-  bottom: 244px;
+  top: 355px;
   right: 24px;
 
   @include media(desktop) {
@@ -123,7 +123,7 @@
 
 .benefits-clouds-container {
   position: absolute;
-  bottom: 40px;
+  top: 456px;
   left: 0;
   width: 320px;
   height: 200px;
