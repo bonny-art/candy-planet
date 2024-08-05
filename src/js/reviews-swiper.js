@@ -53,7 +53,7 @@ fetch('../data/reviews.json')
                  ../img/reviews/${cookieImageName}@1x.png 1x,
                  ../img/reviews/${cookieImageName}@2x.png 2x
                 "
-                alt="Cookie man"
+                alt="Cartoon bread character wearing a chef's hat and red shoes."
               />${item.author}
             </p>
           </div>
