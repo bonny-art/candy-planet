@@ -1,7 +1,4 @@
 import './js/header';
-// import './js/reviews-swiper';
-// import './js/gallery-swiper';
-// import './js/faq';
 
 if (document.getElementById('reviews-swiper-wrapper')) {
   import('./js/reviews-swiper');
