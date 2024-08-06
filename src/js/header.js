@@ -28,18 +28,48 @@ document.addEventListener('keydown', event => {
   }
 });
 
-mobileNavLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    closeMenu();
-    const targetId = link.getAttribute('href');
-    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
 desktopNavLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
     const targetId = link.getAttribute('href');
     document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+
+    const href = link.getAttribute('href');
+    const targetId = href.startsWith('/#') ? href.substring(1) : null;
+    const isRootLink = href === '/' || href === '';
+    const isCurrentPageHome = window.location.pathname === '/';
+
+    if (isRootLink) {
+      window.location.href = '/';
+    } else if (targetId) {
+      if (!isCurrentPageHome) {
+        window.location.href = '/?scrollTo=' + targetId;
+      }
+
+      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    }
+    setTimeout(() => {
+      closeMenu();
+    }, 100);
+  });
+});
+
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(window.location.search);
+  const targetId = params.get('scrollTo');
+
+  if (targetId) {
+    const targetElement = document.querySelector('#' + targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      // Очистіть параметр після скролінгу
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }
 });

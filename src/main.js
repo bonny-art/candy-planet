@@ -9,6 +9,6 @@ if (document.getElementById('gallery-swiper-wrapper')) {
   import('./js/gallery-swiper');
 }
 
-if (document.getElementById('faq-items')) {
-  import('./js/faq');
-}
+// if (document.getElementById('faq')) {
+//   import('./js/faq.js');
+// }
