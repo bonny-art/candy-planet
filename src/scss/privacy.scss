@@ -1,0 +1,59 @@
+.privacy {
+  padding: 132px 0 60px;
+}
+
+.privacy-container {
+  padding: 0 50px;
+}
+
+.privacy-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-title {
+  color: $_title_color;
+  font-family: 'Leckerli One';
+  @include font(24, 32);
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.privacy-text {
+  @include font(12, 14);
+
+  font-weight: 300;
+}
+
+.privacy-disclaimer-link {
+  text-decoration-line: underline;
+}
+
+.privacy-subtitle {
+  @include font(16, 19);
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.privacy-list {
+  padding-left: 18px;
+
+  @include font(12, 24);
+  font-weight: 300;
+
+  list-style-type: disc;
+}
+
+.privacy-list-item {
+  &::marker {
+    content: '•  ';
+  }
+}
+
+.privacy-list-title {
+  font-style: italic;
+  font-weight: 400;
+}

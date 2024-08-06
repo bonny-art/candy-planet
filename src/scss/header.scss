@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 4;
+  z-index: 8;
 
   padding: 24px 0px;
 
@@ -16,7 +16,7 @@
   transform: translateX(-160px);
   width: 320px;
   height: 72px;
-  z-index: 3;
+  z-index: 9;
 
   background: $_primary_blue_color;
   filter: blur(12.5px);
@@ -35,7 +35,7 @@
   justify-content: space-between;
 
   position: relative;
-  z-index: 6;
+  z-index: 10;
 }
 
 .header-logo {

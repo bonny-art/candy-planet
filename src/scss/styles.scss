@@ -40,6 +40,14 @@
   }
 }
 
+.privacy-main {
+  margin-top: -72px;
+
+  @include media(desktop) {
+    margin-top: -100px;
+  }
+}
+
 @import './header.scss';
 @import './hero.scss';
 @import './reviews.scss';
@@ -49,3 +57,5 @@
 @import './faq.scss';
 @import './footer.scss';
 @import './mobile-menu.scss';
+
+@import './privacy.scss';

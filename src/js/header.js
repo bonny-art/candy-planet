@@ -1,7 +1,8 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
 const mobileMenu = document.querySelector('.mobile-menu');
-const navLinks = document.querySelectorAll('.mobile-nav-link');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+const desktopNavLinks = document.querySelectorAll('.desktop-nav-link');
 
 function openMenu() {
   mobileMenu.style.display = 'block';
@@ -27,9 +28,17 @@ document.addEventListener('keydown', event => {
   }
 });
 
-navLinks.forEach(link => {
+mobileNavLinks.forEach(link => {
   link.addEventListener('click', event => {
     closeMenu();
+    const targetId = link.getAttribute('href');
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+desktopNavLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
     const targetId = link.getAttribute('href');
     document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
   });
