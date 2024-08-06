@@ -56,12 +56,18 @@
 
 .gallery-button {
   display: none;
+  transition: transform 0.3s ease;
 
   @include media(desktop) {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     z-index: 10;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
   }
 }
 

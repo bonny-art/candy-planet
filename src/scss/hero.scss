@@ -97,11 +97,18 @@
   background-color: $_white_color;
   box-shadow: 0px 0px 40px 0px #b4e7ff;
 
+  transition: transform 0.3s ease;
+
   @include media(desktop) {
     width: 312px;
     height: 92px;
 
     border: 1px #dcefff;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
   }
 }
 

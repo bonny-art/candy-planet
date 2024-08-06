@@ -7,20 +7,16 @@
 }
 
 .privacy-container {
-  padding: 0 50px;
-
-  @include media(desktop) {
-    padding: 0 370px;
-  }
-}
-
-.privacy-text-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
+  padding: 0 50px;
+
   @include media(desktop) {
     gap: 40px;
+
+    padding: 0 370px;
   }
 }
 

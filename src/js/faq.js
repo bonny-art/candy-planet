@@ -14,15 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
           const iconSrcset = `../img/faq/${
             index === 0 ? 'close' : 'open'
           }@2x.png 2x`;
+          const iconAlt = index === 0 ? 'Close icon' : 'Open icon';
+
           return `
             <div class="faq-item ${index === 0 ? 'open' : ''}">
-              <button class="faq-question">
+              <button class="faq-question" type="button">
                 <span class="faq-question-text">${item.question}</span>
                 <img
                   class="faq-toggle-icon"
                   src="${iconSrc}"
                   srcset="${iconSrcset}"
-                  alt="toggle icon"
+                  alt="${iconAlt}"
                   width="40"
                   height="40"
                 />

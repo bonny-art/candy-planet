@@ -8,9 +8,7 @@ const styles = [
   variablesStyles,
   breakpointsStyles,
   fontsStyles,
-  //   colorsStyles,
   mixinsStyles,
-  //   baseStyles,
   resetStyles,
 ];
 
