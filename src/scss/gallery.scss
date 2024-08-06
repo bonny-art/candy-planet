@@ -7,7 +7,10 @@
 }
 
 .gallery-container {
-  overflow: hidden;
+  @include media(to-desktop) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .gallery-title {
@@ -21,17 +24,17 @@
   @include media(desktop) {
     margin-bottom: 60px;
 
-    @include font(32, 43);
+    @include font(36, 48);
   }
 }
 
 .gallery-swiper-container {
   overflow: hidden;
-  padding: 44px 80px;
   position: relative;
-}
 
-.gallery-swiper-wrapper {
+  @include media(desktop) {
+    padding: 44px 80px;
+  }
 }
 
 .gallery-swiper-slide {
@@ -69,6 +72,9 @@
 }
 
 .gallery-button-prev-image {
+  display: block;
+  width: 80px;
+  height: 80px;
 }
 
 .gallery-button-next {
@@ -78,4 +84,7 @@
 }
 
 .gallery-button-next-image {
+  display: block;
+  width: 80px;
+  height: 80px;
 }

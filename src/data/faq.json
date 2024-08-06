@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How do I get more lives?",
+    "answer": "Lives regenerate over time, or they can be purchased."
+  },
+  {
+    "question": "Can I play without an internet connection?",
+    "answer": "Yes, offline play is available, but some features require a connection."
+  },
+  {
+    "question": "What are the benefits of connecting to Facebook?",
+    "answer": "Connecting allows you to save your progress and compete with friends."
+  },
+  {
+    "question": "How can I get more coins?",
+    "answer": "Coins are earned by completing levels or can be bought in the shop."
+  },
+  {
+    "question": "Are there any penalties for failing a level?",
+    "answer": "Failing a level costs one life, but you can retry as many times as needed."
+  },
+  {
+    "question": "How to use power-ups effectively?",
+    "answer": "Save power-ups for tougher levels or to meet specific level requirements."
+  },
+  {
+    "question": "Is there a way to reset the game progress?",
+    "answer": "Yes, you can reset your progress in the settings menu."
+  },
+  {
+    "question": "Can children play this game?",
+    "answer": "Yes, it's suitable for all ages, offering a family-friendly puzzle experience."
+  },
+  {
+    "question": "What happens during a game update?",
+    "answer": "Updates may add new levels, features, or bug fixes."
+  },
+  {
+    "question": "How do I solve a level I’m stuck on?",
+    "answer": "Try different strategies, use power-ups wisely, or look for gameplay tips online."
+  }
+]

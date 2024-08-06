@@ -45,16 +45,6 @@ fetch('../data/gallery.json')
       centeredSlides: true,
       slidesPerView: 'auto',
       loop: true,
-      // breakpoints: {
-      //   320: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 24,
-      //   },
-      //   1440: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 40,
-      //   },
-      // },
       navigation: {
         nextEl: '.gallery-button-next',
         prevEl: '.gallery-button-prev',
@@ -67,6 +57,7 @@ fetch('../data/gallery.json')
         depth: 0,
         modifier: 1,
         scale: scale,
+        slideShadows: false,
       },
     });
   })
