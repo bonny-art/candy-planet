@@ -18,15 +18,15 @@ fetch('../data/gallery.json')
             <source
               media="(min-width: 1440px)"
               srcset="
-                ./img/gallery/img-${slideIndex}-desk@1x.jpg,
-                ./img/gallery/img-${slideIndex}-desk@2x.jpg 2x
+                ../img/gallery/img-${slideIndex}-desk@1x.jpg,
+                ../img/gallery/img-${slideIndex}-desk@2x.jpg 2x
               "
             />
             <img
-              src="./img/gallery/img-${slideIndex}-mob@1x.jpg"
+              src="../img/gallery/img-${slideIndex}-mob@1x.jpg"
               srcset="
-                ./img/gallery/img-${slideIndex}-mob@1x.jpg,
-                ./img/gallery/img-${slideIndex}-mob@2x.jpg 2x
+                ../img/gallery/img-${slideIndex}-mob@1x.jpg,
+                ../img/gallery/img-${slideIndex}-mob@2x.jpg 2x
               "
               alt="${item.alt}"
             />

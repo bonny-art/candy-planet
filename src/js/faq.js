@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const faqHTML = data
         .map((item, index) => {
-          const iconSrc = `./img/faq/${index === 0 ? 'close' : 'open'}@1x.png`;
-          const iconSrcset = `./img/faq/${
+          const iconSrc = `../img/faq/${index === 0 ? 'close' : 'open'}@1x.png`;
+          const iconSrcset = `../img/faq/${
             index === 0 ? 'close' : 'open'
           }@2x.png 2x`;
           const iconAlt = index === 0 ? 'Close icon' : 'Open icon';
@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
           faqItems.forEach(faq => {
             faq.classList.remove('open');
             const faqToggleIcon = faq.querySelector('.faq-toggle-icon');
-            faqToggleIcon.src = './img/faq/open@1x.png';
-            faqToggleIcon.srcset = './img/faq/open@2x.png 2x';
+            faqToggleIcon.src = '../img/faq/open@1x.png';
+            faqToggleIcon.srcset = '../img/faq/open@2x.png 2x';
           });
 
           item.classList.add('open');
-          toggleIcon.src = './img/faq/close@1x.png';
-          toggleIcon.srcset = './img/faq/close@2x.png 2x';
+          toggleIcon.src = '../img/faq/close@1x.png';
+          toggleIcon.srcset = '../img/faq/close@2x.png 2x';
         });
       });
     })
