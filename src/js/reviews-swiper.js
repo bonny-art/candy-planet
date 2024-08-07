@@ -14,10 +14,10 @@ fetch('../data/reviews.json')
           <img
             width="24"
             height="24"
-            src="../img/reviews/star@1x.png"
+            src="./img/reviews/star@1x.png"
             srcset="
-             ../img/reviews/star@1x.png 1x,
-             ../img/reviews/star@2x.png 2x
+             ./img/reviews/star@1x.png 1x,
+             ./img/reviews/star@2x.png 2x
             "
             alt="Rating star"
           />
@@ -39,19 +39,19 @@ fetch('../data/reviews.json')
                 class="reviews-triangle"
                 width="24"
                 height="12"
-                src="../img/reviews/reviews-triangle@1x.png"
+                src="./img/reviews/reviews-triangle@1x.png"
                 srcset="
-                 ../img/reviews/reviews-triangle@1x.png 1x,
-                 ../img/reviews/reviews-triangle@2x.png 2x
+                 ./img/reviews/reviews-triangle@1x.png 1x,
+                 ./img/reviews/reviews-triangle@2x.png 2x
                 "
               />
             </div>
             <p class="reviews-review-user">
               <img
-                src="../img/reviews/${cookieImageName}@1x.png"
+                src="./img/reviews/${cookieImageName}@1x.png"
                 srcset="
-                 ../img/reviews/${cookieImageName}@1x.png 1x,
-                 ../img/reviews/${cookieImageName}@2x.png 2x
+                 ./img/reviews/${cookieImageName}@1x.png 1x,
+                 ./img/reviews/${cookieImageName}@2x.png 2x
                 "
                 alt="Cartoon bread character wearing a chef's hat and red shoes."
               />${item.author}
