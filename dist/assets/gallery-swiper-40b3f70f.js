@@ -1,0 +1,2 @@
+import{S as t}from"./vendor-4b5ab9a6.js";const e=window.innerWidth<1440,r=e?.7954:.7665,o=e?-20:-45;new t(".gallery-swiper-container",{grabCursor:!0,centeredSlides:!0,slidesPerView:"auto",loop:!0,navigation:{nextEl:".gallery-button-next",prevEl:".gallery-button-prev"},effect:"coverflow",coverflowEffect:{rotate:0,stretch:o,depth:0,modifier:1,scale:r,slideShadows:!1}});
+//# sourceMappingURL=gallery-swiper-40b3f70f.js.map
