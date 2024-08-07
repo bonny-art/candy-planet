@@ -31,8 +31,26 @@ document.addEventListener('keydown', event => {
 desktopNavLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
-    const targetId = link.getAttribute('href');
-    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+
+    const href = link.getAttribute('href');
+    const targetId = href.startsWith('/candy-planet/#')
+      ? href.substring(14)
+      : null;
+    const isRootLink = href === '/candy-planet/' || href === '/candy-planet';
+    const isCurrentPageHome = window.location.pathname === '/candy-planet/';
+
+    if (isRootLink) {
+      window.location.href = '/candy-planet/';
+    } else if (targetId) {
+      if (!isCurrentPageHome) {
+        window.location.href = '/candy-planet/?scrollTo=' + targetId;
+      }
+
+      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    }
+    setTimeout(() => {
+      closeMenu();
+    }, 100);
   });
 });
 
@@ -41,15 +59,17 @@ mobileNavLinks.forEach(link => {
     event.preventDefault();
 
     const href = link.getAttribute('href');
-    const targetId = href.startsWith('/#') ? href.substring(1) : null;
-    const isRootLink = href === '/' || href === '';
-    const isCurrentPageHome = window.location.pathname === '/';
+    const targetId = href.startsWith('/candy-planet/#')
+      ? href.substring(14)
+      : null;
+    const isRootLink = href === '/candy-planet/' || href === '/candy-planet';
+    const isCurrentPageHome = window.location.pathname === '/candy-planet/';
 
     if (isRootLink) {
-      window.location.href = '/';
+      window.location.href = '/candy-planet/';
     } else if (targetId) {
       if (!isCurrentPageHome) {
-        window.location.href = '/?scrollTo=' + targetId;
+        window.location.href = '/candy-planet/?scrollTo=' + targetId;
       }
 
       document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +88,7 @@ window.addEventListener('load', () => {
     const targetElement = document.querySelector('#' + targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
-      // Очистіть параметр після скролінгу
+
       window.history.replaceState({}, document.title, window.location.pathname);
     }
   }

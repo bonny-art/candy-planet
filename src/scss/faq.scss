@@ -94,10 +94,23 @@
 }
 
 .faq-toggle-icon {
-  display: block;
+  display: none;
+}
 
-  width: 40px;
-  height: 40px;
+.faq-item.open .faq-close-icon {
+  display: block;
+}
+
+.faq-item.open .faq-open-icon {
+  display: none;
+}
+
+.faq-item:not(.open) .faq-close-icon {
+  display: none;
+}
+
+.faq-item:not(.open) .faq-open-icon {
+  display: block;
 }
 
 .faq-answer {
