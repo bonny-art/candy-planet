@@ -8,7 +8,8 @@
     "build": "vite build --base=/candy-planet/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "deploy": "netlify deploy -p",
+    "postinstall": "npm install --platform=linux --arch=x64 sharp"
   },
   "devDependencies": {
     "glob": "^8.1.0",
