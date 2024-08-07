@@ -1,4 +1,4 @@
-@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import url('../../node_modules/swiper/swiper-bundle.min.css');
 
 :root {
   font-family: Inria Serif, sans-serif;
@@ -58,15 +58,15 @@ body {
   }
 }
 
-@import '/header.scss';
-@import '/hero.scss';
-@import '/reviews.scss';
-@import '/benefits.scss';
-@import '/about.scss';
-@import '/gallery.scss';
-@import '/faq.scss';
-@import '/footer.scss';
-@import '/mobile-menu.scss';
+@import url('./header.scss');
+@import url('./hero.scss');
+@import url('./reviews.scss');
+@import url('./benefits.scss');
+@import url('./about.scss');
+@import url('./gallery.scss');
+@import url('./faq.scss');
+@import url('./footer.scss');
+@import url('./mobile-menu.scss');
 
-@import '/privacy.scss';
-@import '/terms.scss';
+@import url('./privacy.scss');
+@import url('./terms.scss');
