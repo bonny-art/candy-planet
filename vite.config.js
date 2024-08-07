@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/candy-planet/',
+    // base: '/candy-planet/',
   };
 });
